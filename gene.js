@@ -12,11 +12,7 @@ c=0,d=e.length;d>c;c++)b=e[c],a=a.replace(new RegExp("\\"+b,"g"),"\\"+b);return 
         }
         var Gene = new RiveScript();
         Gene.unicodePunctuation = new RegExp(/[.,!?;:]/g);
-        Gene.loadFile([
-    "main.rive"
-
-], loading_done, loading_error);
-
+sys.getFileContent("base.rive")
 
 function loading_done(batch_num) {
     print("Batch #" + batch_num + " has finished loading!");
